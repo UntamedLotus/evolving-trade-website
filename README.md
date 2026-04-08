@@ -58,23 +58,27 @@ Follow these steps to set up the project locally.
 ### Prerequisites
 
 Ensure you have the following installed:
+
 - **Node.js** (v18.17.0 or later)
 - **Yarn** (v1.22.x or later)
 
 ### Installation
 
 1.  **Clone the repository:**
+
     ```bash
     git clone <repository-url>
     cd export-app
     ```
 
 2.  **Install dependencies:**
+
     ```bash
     yarn install
     ```
 
 3.  **Run the development server:**
+
     ```bash
     yarn dev
     ```
@@ -83,30 +87,21 @@ Ensure you have the following installed:
 
 ## 📜 Available Scripts
 
-| Script | Description |
-| :--- | :--- |
-| `yarn dev` | Starts the development server with hot-reloading. |
-| `yarn build` | Creates an optimized production build. |
+| Script       | Description                                               |
+| :----------- | :-------------------------------------------------------- |
+| `yarn dev`   | Starts the development server with hot-reloading.         |
+| `yarn build` | Creates an optimized production build.                    |
 | `yarn start` | Runs the production server (requires `yarn build` first). |
-| `yarn lint` | Runs ESLint to identify and fix code quality issues. |
+| `yarn lint`  | Runs ESLint to identify and fix code quality issues.      |
 
 ## 📐 SEO & Performance Standards
 
 This project adheres to high standards of web performance and SEO:
+
 - **Heading Hierarchy**: Enforces a single `<h1>` per page with logical nesting (`<h2>`, `<h3>`).
 - **Semantic Tags**: Uses `<main>`, `<section>`, `<nav>`, and `<footer>` for accessibility.
 - **Image Priority**: LCP images are marked with `priority` to improve Core Web Vitals.
 - **Canonical URLs**: Managed automatically to prevent duplicate content indexing.
-
-## 🤝 Contributing
-
-We welcome contributions! Please follow these steps:
-
-1.  Fork the repository.
-2.  Create a new branch (`git checkout -b feature/AmazingFeature`).
-3.  Commit your changes (`git commit -m 'Add some AmazingFeature'`).
-4.  Push to the branch (`git push origin feature/AmazingFeature`).
-5.  Open a Pull Request.
 
 ---
 
