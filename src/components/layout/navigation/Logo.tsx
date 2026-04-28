@@ -5,7 +5,7 @@ const Logo = () => {
     return (
         <Link href="/" className="flex items-center gap-2 group">
             <Image
-                src="/evolving-trade-solutions-logo-croped.webp"
+                src="/images/logos/evolving-trade-solutions-logo-croped.webp"
                 alt="Evolving Trade Solutions Logo"
                 width={500}
                 height={60}

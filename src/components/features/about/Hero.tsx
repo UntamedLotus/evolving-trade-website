@@ -7,7 +7,7 @@ const Hero = () => {
 		<div className='relative h-[60vh] w-full'>
 			<div className='absolute inset-0'>
 				<Image
-					src='/global-logistics-transportation-network.webp'
+					src='/images/pages/about-us/about-us-banner.webp'
 					alt='About Us Background'
 					fill
 					className='object-cover'

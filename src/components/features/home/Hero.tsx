@@ -6,17 +6,20 @@ import Link from "next/link";
 
 const heroData = [
 	{
-		backgroundImage: "/flat-lay-delicious-indian-spices.webp",
+		backgroundImage:
+			"/images/pages/home/slides/home-slide-banner-for-spices.webp",
 		text: "Experience the authentic aroma of India with our premium handpicked spices",
 	},
 
 	{
-		backgroundImage: "/table-full-vegetables-fruits.webp",
+		backgroundImage:
+			"/images/pages/home/slides/home-slide-banner-for-fruits.webp",
 		text: "Bright colours, bold flavours, Better health. Bring home nature’s best with our fresh produce.",
 	},
 
 	{
-		backgroundImage: "/tai-rice-wooden-bowl.webp",
+		backgroundImage:
+			"/images/pages/home/slides/home-slide-banner-rice.webp",
 		text: "Crystal clear grains, rich aroma, unmatched taste. Choose our finest quality rice for your kitchen",
 	},
 ];
@@ -51,8 +54,9 @@ export default function Hero() {
 							alt={`Slide ${i + 1}`}
 							fill
 							priority={i === 0}
-							className={`object-cover transition-opacity duration-700 ease-in-out ${i === current ? "opacity-100" : "opacity-0"
-								}`}
+							className={`object-cover transition-opacity duration-700 ease-in-out ${
+								i === current ? "opacity-100" : "opacity-0"
+							}`}
 						/>
 					</div>
 				))}
@@ -64,7 +68,10 @@ export default function Hero() {
 				<p className='text-white font-semibold text-xl md:text-4xl mt-6 max-w-2xl drop-shadow-md transition-all duration-700 ease-in-out'>
 					{heroData[current].text}
 				</p>
-				<Link href='/product/spices' className='mt-8 px-8 py-3 bg-tertiary-ocean text-primary-blue font-semibold rounded-full hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1'>
+				<Link
+					href='/product/spices'
+					className='mt-8 px-8 py-3 bg-tertiary-ocean text-primary-blue font-semibold rounded-full hover:bg-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1'
+				>
 					Explore Products
 				</Link>
 			</div>
@@ -75,10 +82,11 @@ export default function Hero() {
 						key={i}
 						aria-label={`Slide ${i + 1}`}
 						onClick={() => setCurrent(i)}
-						className={`w-3 h-3 rounded-full transition-all duration-300 ${current === i
-							? "bg-tertiary-ocean w-8"
-							: "bg-white/50 hover:bg-white/80"
-							}`}
+						className={`w-3 h-3 rounded-full transition-all duration-300 ${
+							current === i
+								? "bg-tertiary-ocean w-8"
+								: "bg-white/50 hover:bg-white/80"
+						}`}
 					></button>
 				))}
 			</div>

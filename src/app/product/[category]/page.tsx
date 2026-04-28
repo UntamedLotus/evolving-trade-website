@@ -67,18 +67,10 @@ const CategoryPage = async ({ params }: Props) => {
 		<div className='min-h-screen bg-slate-50 flex flex-col'>
 			<StructuredData data={breadcrumbSchema} />
 			{/* Header Section */}
-			<section className='relative bg-primary-blue pt-32 pb-24 px-6 overflow-hidden'>
+			<section className='relative bg-primary-blue py-16 px-6 overflow-hidden'>
 				<div className='absolute top-0 right-0 w-[600px] h-[600px] bg-primary-ocean/10 rounded-full blur-[120px] -mr-64 -mt-64'></div>
 
 				<div className='max-w-7xl mx-auto relative z-10'>
-					<Link
-						href='/'
-						className='inline-flex items-center gap-2 text-tertiary-ocean hover:text-white transition-all mb-12 font-medium group'
-					>
-						<MoveLeft className='w-5 h-5 transition-transform group-hover:-translate-x-1' />
-						Back to Home
-					</Link>
-
 					<div className='grid grid-cols-1 lg:grid-cols-2 gap-12 items-center'>
 						<div className='space-y-6'>
 							<div className='flex items-center gap-2 text-tertiary-ocean'>

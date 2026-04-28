@@ -6,7 +6,7 @@ const Introduction = () => {
 		<div className='grid grid-cols-1 items-center lg:grid-cols-2 p-6 md:p-10 lg:px-40 gap-10 lg:gap-20 mt-10'>
 			<div className='relative h-64 md:h-80 shadow-4xl border border-slate-400 rounded-tl-4xl rounded-br-4xl'>
 				<Image
-					src='/about-us.webp'
+					src='/images/pages/home/about-us.webp'
 					alt='Agro products'
 					fill
 					className='object-cover border-4 border-white rounded-tl-4xl rounded-br-4xl shadow-2xl'

@@ -21,7 +21,7 @@ export default function ContactPage(): JSX.Element {
 			{/* Background Image with Overlay */}
 			<div className='absolute inset-0 z-0'>
 				<Image
-					src='/contact-bg.webp'
+					src='/images/pages/contact-us/contact-bg.webp'
 					alt='Contact Background'
 					fill
 					className='object-cover'

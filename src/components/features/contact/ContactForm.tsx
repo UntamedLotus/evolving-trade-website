@@ -29,6 +29,17 @@ export default function ContactForm() {
         setIsSubmitting(true);
         setSubmitStatus("idle");
 
+        const formData = new FormData(formRef.current);
+        const phone = formData.get("phone") as string;
+        const phoneDigits = phone?.replace(/\D/g, "") || "";
+        
+        if (phoneDigits.length < 10) {
+            setSubmitStatus("error");
+            setErrorMessage("Please enter a valid phone number with at least 10 digits.");
+            setIsSubmitting(false);
+            return;
+        }
+
         try {
             // Note: These env variables should be prefixed with NEXT_PUBLIC_ to be available on the client
             await emailjs.sendForm(
@@ -131,8 +142,18 @@ export default function ContactForm() {
                             <PhoneIcon className='absolute left-4 top-3.5 w-5 h-5 text-gray-400' />
                             <input
                                 name='phone'
+                                type='tel'
+                                required
+                                minLength={10}
+                                maxLength={20}
+                                pattern='^\+?[0-9\s\-\(\)]{10,20}$'
+                                title='Please enter a valid phone number (e.g. +91 98765 43210)'
                                 className='w-full pl-12 pr-4 py-3 rounded-xl border border-gray-200 focus:border-primary-ocean focus:ring-2 focus:ring-primary-ocean/20 outline-none transition-all bg-gray-50 focus:bg-white text-primary-blue'
                                 placeholder='+91 98765 43210'
+                                onInput={(e) => {
+                                    const target = e.target as HTMLInputElement;
+                                    target.value = target.value.replace(/[^\d\+\s\-\(\)]/g, '');
+                                }}
                             />
                         </div>
                     </div>

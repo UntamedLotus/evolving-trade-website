@@ -9,7 +9,7 @@ const Introduction = () => {
 					<div className='w-full md:w-1/2'>
 						<div className='relative h-[400px] w-full rounded-2xl overflow-hidden bg-secondary-grey'>
 							<Image
-								src='/about-us-banner.webp'
+								src='/images/pages/about-us/about-us-intro.webp'
 								alt='About Us Background'
 								fill
 								className='object-cover'

@@ -22,11 +22,11 @@ const Footer = () => {
 				<div className='space-y-6'>
 					<div className='flex items-center gap-2'>
 						<Image
-							src='/evolving-trade-solutions-transparent-bg.png'
+							src='/images/logos/evolving-trade-footer-logo.webp'
 							alt='Evolving Trade Solutions Logo'
 							width={180}
 							height={60}
-							className='w-auto object-contain brightness-0 invert'
+							className='w-auto object-contain'
 						/>
 					</div>
 					<p className='text-gray-300 text-sm leading-relaxed'>
