@@ -35,32 +35,34 @@ const CategoryPage = async ({ params }: Props) => {
 		notFound();
 	}
 
-	const filteredProducts = products.filter((p) => p.category === categoryData.id);
+	const filteredProducts = products.filter(
+		(p) => p.category === categoryData.id
+	);
 	const siteUrl = "https://www.evolvingtradesolutions.com";
 
 	const breadcrumbSchema = {
 		"@context": "https://schema.org",
 		"@type": "BreadcrumbList",
-		"itemListElement": [
+		itemListElement: [
 			{
 				"@type": "ListItem",
-				"position": 1,
-				"name": "Home",
-				"item": siteUrl
+				position: 1,
+				name: "Home",
+				item: siteUrl,
 			},
 			{
 				"@type": "ListItem",
-				"position": 2,
-				"name": "Products",
-				"item": `${siteUrl}/product`
+				position: 2,
+				name: "Products",
+				item: `${siteUrl}/product`,
 			},
 			{
 				"@type": "ListItem",
-				"position": 3,
-				"name": categoryData.name,
-				"item": `${siteUrl}/product/${category}`
-			}
-		]
+				position: 3,
+				name: categoryData.name,
+				item: `${siteUrl}/product/${category}`,
+			},
+		],
 	};
 
 	return (
@@ -152,7 +154,7 @@ const CategoryPage = async ({ params }: Props) => {
 										href='/contact'
 										className='inline-flex items-center gap-2 text-primary-ocean font-bold text-sm uppercase tracking-wider group/link'
 									>
-										Contact Us
+										order now
 										<ArrowRight className='w-4 h-4 transition-transform group-hover/link:translate-x-2' />
 									</Link>
 								</div>
@@ -188,7 +190,7 @@ const CategoryPage = async ({ params }: Props) => {
 							href='/contact'
 							className='inline-block bg-primary-blue text-white px-12 py-4 rounded-tl-2xl rounded-br-2xl font-bold text-lg hover:bg-white hover:text-primary-blue transition-all transform hover:-translate-y-1 shadow-2xl'
 						>
-							Contact Us
+							Order Now
 						</Link>
 					</div>
 				</div>

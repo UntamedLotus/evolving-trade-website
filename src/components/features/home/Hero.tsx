@@ -22,6 +22,16 @@ const heroData = [
 			"/images/pages/home/slides/home-slide-banner-rice.webp",
 		text: "Crystal clear grains, rich aroma, unmatched taste. Choose our finest quality rice for your kitchen",
 	},
+	{
+		backgroundImage:
+			"/images/pages/home/slides/home-slide-banner-for-vegetables.webp",
+		text: "Bringing you the finest vegetables with care, consistency, and a commitment you can trust.",
+	},
+	{
+		backgroundImage:
+			"/images/pages/home/slides/home-slide-banner-for-aayush-products.webp",
+		text: "Where ancient wisdom meets modern care; premium herbal products made for you.",
+	},
 ];
 
 export default function Hero() {

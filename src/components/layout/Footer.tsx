@@ -54,8 +54,8 @@ const Footer = () => {
 												: item === "Products"
 													? "/product"
 													: `/${item
-														.toLowerCase()
-														.replace(" ", "-")}`
+															.toLowerCase()
+															.replace(" ", "-")}`
 										}
 										className='text-gray-300 hover:text-tertiary-ocean transition-colors flex items-center gap-2 group'
 									>
@@ -83,7 +83,10 @@ const Footer = () => {
 							{ name: "Fruits", slug: "fruits" },
 							{ name: "Rice", slug: "rice" },
 							{ name: "Spices", slug: "spices" },
-							{ name: "Aayush Products", slug: "aayush-products" },
+							{
+								name: "Aayush Products",
+								slug: "aayush-products",
+							},
 						].map((item) => (
 							<li key={item.name}>
 								<Link
@@ -110,7 +113,9 @@ const Footer = () => {
 								className='text-tertiary-ocean shrink-0 mt-1'
 							/>
 							<span className='text-sm'>
-								Anupama Society, Body Gate, A-6, Phase 1, Siddarth Nagar Society, Aundh, Pune, Maharashtra 411007
+								Anupama Society, Body Gate, A-6, Phase 1,
+								Siddarth Nagar Society, Aundh, Pune, Maharashtra
+								411007
 							</span>
 						</li>
 						<li className='flex items-center gap-3 text-gray-300'>
@@ -126,7 +131,7 @@ const Footer = () => {
 								className='text-tertiary-ocean shrink-0'
 							/>
 							<span className='text-sm'>
-								evolutionarytradesolutions@gmail.com
+								evolvingtradesolutions@gmail.com
 							</span>
 						</li>
 					</ul>
@@ -143,8 +148,8 @@ const Footer = () => {
 					<div className='flex gap-4'>
 						<Link
 							href='https://www.facebook.com/profile.php?id=61585266255129'
-							aria-label="Facebook"
-							target="_blank"
+							aria-label='Facebook'
+							target='_blank'
 							className='bg-white/10 p-2 rounded-full hover:bg-tertiary-ocean hover:text-primary-blue transition-all duration-300'
 						>
 							<Facebook size={20} />
@@ -158,15 +163,15 @@ const Footer = () => {
 						</Link> */}
 						<Link
 							href='https://www.instagram.com/evolvingtradesolutions'
-							aria-label="Instagram"
-							target="_blank"
+							aria-label='Instagram'
+							target='_blank'
 							className='bg-white/10 p-2 rounded-full hover:bg-tertiary-ocean hover:text-primary-blue transition-all duration-300'
 						>
 							<Instagram size={20} />
 						</Link>
 						<Link
 							href='#'
-							aria-label="LinkedIn"
+							aria-label='LinkedIn'
 							className='bg-white/10 p-2 rounded-full hover:bg-tertiary-ocean hover:text-primary-blue transition-all duration-300'
 						>
 							<Linkedin size={20} />

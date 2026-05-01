@@ -21,13 +21,18 @@ const Introduction = () => {
 					</span>
 				</h1>
 				<p className='leading-relaxed text-primary-grey text-base'>
-					We believe trade should evolve with the times faster processes, smarter logistics, and meaningful partnerships built on trust. Our goal is to redefine how small and mid-sized businesses participate in global commerce by offering flexible, end-to-end import-export solutions.
+					We believe trade should evolve with the times; faster
+					processes, smarter logistics, and meaningful partnerships
+					built on trust.
 				</p>
 
 				<p className='italic text-secondary-ocean font-medium border-l-4 border-tertiary-ocean pl-4 py-1 text-sm md:text-base'>
 					- Connecting Markets, Creating Opportunity.
 				</p>
-				<Link href='/about-us' className='bg-primary-ocean hover:bg-secondary-ocean font-medium text-white py-3 px-8 text-sm rounded-tl-2xl rounded-br-2xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mt-4 text-center'>
+				<Link
+					href='/about-us'
+					className='bg-primary-ocean hover:bg-secondary-ocean font-medium text-white py-3 px-8 text-sm rounded-tl-2xl rounded-br-2xl transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1 mt-4 text-center'
+				>
 					More About Us
 				</Link>
 			</div>
