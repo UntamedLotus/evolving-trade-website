@@ -88,7 +88,7 @@ export const products: Product[] = [
 		name: "Suran (Elephant Foot Yam)",
 		description:
 			"Highly nutritious and versatile tuber, popular in traditional Indian cuisine.",
-		image: "/images/products/vegetables/suran.webp",
+		image: "/images/products/vegetables/suran-yam.webp",
 		category: "vegetables",
 	},
 	{
@@ -122,14 +122,14 @@ export const products: Product[] = [
 		name: "Mango",
 		description:
 			"The king of fruits - delicious, sweet, and aromatic mangoes available in peak season.",
-		image: "/images/products/fruits/raw-mango.webp",
+		image: "/images/products/fruits/mango.webp",
 		category: "fruits",
 	},
 	{
 		id: "husk-coconut",
 		name: "Husk Coconut",
 		description:
-			"These coconuts are known for their thick layers of fiber, which keep the inner shell intact and moist.",
+			"Fresh, naturally grown husk coconuts with consistent quality and reliable supply.",
 		image: "/images/products/fruits/husk-coconut.webp",
 		category: "fruits",
 	},
@@ -137,7 +137,7 @@ export const products: Product[] = [
 		id: "tender-coconut",
 		name: "Tender Coconut",
 		description:
-			"These coconuts are harvested when they are young and immature, making them tender and juicy.",
+			"Fresh, naturally sweet tender coconuts, carefully selected to deliver pure hydration and quality.",
 		image: "/images/products/fruits/tender-coconut.webp",
 		category: "fruits",
 	},
@@ -156,7 +156,7 @@ export const products: Product[] = [
 		name: "Non-Basmati Rice",
 		description:
 			"High-quality everyday rice varieties, perfect for a wide range of dishes.",
-		image: "/images/products/rice/non-basmati-rice.webp",
+		image: "/images/products/rice/normal-rice.webp",
 		category: "rice",
 	},
 

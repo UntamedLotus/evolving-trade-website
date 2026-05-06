@@ -17,7 +17,7 @@ const Footer = () => {
 
 	return (
 		<footer className='bg-primary-blue text-white pt-16 pb-8'>
-			<div className='max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12'>
+			<div className='max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12'>
 				{/* Company Info */}
 				<div className='space-y-6'>
 					<div className='flex items-center gap-2'>
@@ -130,7 +130,7 @@ const Footer = () => {
 								size={20}
 								className='text-tertiary-ocean shrink-0'
 							/>
-							<span className='text-sm'>
+							<span className='text-sm break-all'>
 								evolvingtradesolutions@gmail.com
 							</span>
 						</li>
