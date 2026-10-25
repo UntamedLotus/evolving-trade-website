@@ -26,24 +26,22 @@ const Navigation = () => {
 
 	return (
 		<>
-
 			{/* Main Navigation */}
 			<nav
-				className={`w-full transition-all duration-300 sticky top-0 z-50 ${scrolled
-					? "bg-white/95 backdrop-blur-md shadow-md py-3"
-					: "bg-white py-5"
-					}`}
+				className={`w-full transition-all duration-300 sticky top-0 z-50 ${
+					scrolled
+						? "bg-white/95 backdrop-blur-md shadow-md py-3"
+						: "bg-white py-5"
+				}`}
 			>
-				<div className="max-w-7xl mx-auto px-4 md:px-8 flex items-center justify-between">
+				<div className='mx-auto px-4 md:px-8 flex items-center justify-between'>
 					<Logo />
 
 					<DesktopMenu pathname={pathname} />
 
-
-
 					{/* Mobile Menu Button */}
 					<button
-						className="md:hidden text-primary-blue hover:text-primary-ocean transition-colors"
+						className='md:hidden text-primary-blue hover:text-primary-ocean transition-colors'
 						onClick={() => setOpen(!open)}
 						aria-label={open ? "Close menu" : "Open menu"}
 					>

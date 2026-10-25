@@ -16,8 +16,8 @@ const Footer = () => {
 	const currentYear = new Date().getFullYear();
 
 	return (
-		<footer className='bg-primary-blue text-white pt-16 pb-8'>
-			<div className='max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12'>
+		<footer className='bg-primary-blue text-white pt-16 pb-8 md:px-7'>
+			<div className='mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12'>
 				{/* Company Info */}
 				<div className='space-y-6'>
 					<div className='flex items-center gap-2'>
@@ -31,8 +31,8 @@ const Footer = () => {
 					</div>
 					<p className='text-gray-300 text-sm leading-relaxed'>
 						Evolving Trade Solutions is a trusted name in the global
-						agro-export industry, delivering premium quality
-						agricultural products with a commitment to integrity and
+						import-export industry, delivering premium quality
+						products with a commitment to integrity and
 						sustainability.
 					</p>
 				</div>
@@ -40,8 +40,8 @@ const Footer = () => {
 				{/* Quick Links */}
 				<div>
 					<h3 className='text-xl font-semibold mb-6 relative inline-block'>
-						Quick Links
-						<span className='absolute -bottom-2 left-0 w-1/2 h-1 bg-tertiary-ocean rounded-full'></span>
+						Quick Links{" "}
+						<span className='absolute-bottom-2 left-0 w-1/2 h-1 bg-tertiary-ocean rounded-full'></span>
 					</h3>
 					<ul className='space-y-3'>
 						{["Home", "About Us", "Products", "Contact Us"].map(
@@ -74,8 +74,8 @@ const Footer = () => {
 				{/* Products (Optional - can be replaced with something else) */}
 				<div>
 					<h3 className='text-xl font-semibold mb-6 relative inline-block'>
-						Our Products
-						<span className='absolute -bottom-2 left-0 w-1/2 h-1 bg-tertiary-ocean rounded-full'></span>
+						Our Products{" "}
+						<span className='absolute-bottom-2 left-0 w-1/2 h-1 bg-tertiary-ocean rounded-full'></span>
 					</h3>
 					<ul className='space-y-3'>
 						{[
@@ -103,7 +103,7 @@ const Footer = () => {
 				{/* Contact Info */}
 				<div>
 					<h3 className='text-xl font-semibold mb-6 relative inline-block'>
-						Contact Us
+						Contact Us{" "}
 						<span className='absolute -bottom-2 left-0 w-1/2 h-1 bg-tertiary-ocean rounded-full'></span>
 					</h3>
 					<ul className='space-y-4'>
@@ -170,7 +170,7 @@ const Footer = () => {
 							<Instagram size={20} />
 						</Link>
 						<Link
-							href='#'
+							href='https://www.linkedin.com/in/evolvingtradesolutions-llp/'
 							aria-label='LinkedIn'
 							className='bg-white/10 p-2 rounded-full hover:bg-tertiary-ocean hover:text-primary-blue transition-all duration-300'
 						>

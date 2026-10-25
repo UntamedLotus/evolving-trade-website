@@ -23,8 +23,11 @@ const CompanyProfile = () => {
 		},
 		{ label: "Business Type", value: "Merchant Importer Exporter" },
 		{ label: "Establishment", value: "2025" },
-		{ label: "Exporter Importer Code", value: "-" },
-		{ label: "GST Certificate Registration Number", value: "-" },
+		{ label: "Import Export Code", value: "AAMFE5493P" },
+		{
+			label: "GST Certificate Registration Number",
+			value: "27AAMFE5493P1ZI",
+		},
 		{ label: "Export Percentage", value: "100%" },
 		{
 			label: "Product Samples",
